@@ -105,65 +105,40 @@
     </section>
     <!--  -->
     <!--  -->
-    <section class="section-description">
-      <div>
-        <h2>Acerca de nosotros...</h2>
-        <p>
-          Desde nuestra creación, hace ya mas de tres años, en Kanna Cocina nos
-          guiamos por valores éticos sólidos que nos permiten ofrecer un
-          servicio de alta calidad y confianza. Nos comprometemos con la
-          transparencia en nuestros procesos y precios, la honestidad en
-          nuestras relaciones con los clientes y proveedores, y la
-          responsabilidad en el manejo de alimentos y recursos. Además,
-          priorizamos la sostenibilidad y el respeto por el medio ambiente,
-          seleccionando ingredientes locales y orgánicos siempre que sea
-          posible.
-        </p>
-      </div>
+    <section class="section-form">
+      <h3>Contactanos...</h3>
+      <p>
+        Rellena el formulario o enviános un mail con tus requerimientos y te
+        responderemos a la brevedad...
+      </p>
+      <form class="contact-form">
+        <div>
+          <label for="Nombre">Nombre y apellido</label>
+          <input type="text" name="Nombre" />
+        </div>
+        <div>
+          <label for="Email">Email</label>
+          <input type="text" name="Email" />
+        </div>
+        <div>
+          <label for="Servicio">Servicio requerido</label>
+          <select name="Servicio" id="Servicio">
+            <option value="comedor">Comedor</option>
+            <option value="empresas-colegios">Empresas / Colegios</option>
+            <option value="eventos">Eventos</option>
+          </select>
+        </div>
+        <div>
+          <label for="consulta">Cualquier consulta que quieras detallar</label>
+          <textarea name="consulta" id="consulta"></textarea>
+        </div>
+        <button>Enviar</button>
+      </form>
     </section>
     <!--  -->
     <!--  -->
-    <section class="section-works">
-      <div class="h2-div">
-        <h2>Nuestros tipos de servicios</h2>
-      </div>
-      <div class="container-fluid card-container">
-        <div class="card">
-          <img
-            src="./assets/celebration-icon-style-free-vector.jpg"
-            alt="preview img"
-          />
-          <div class="card-body">
-            <h2 class="card-title">Eventos</h2>
-            <p class="card-text">
-              Te armamos el catering de tu fiesta a tu medida y a tus gustos
-              para que lo único de lo que tengas que preocuparte vos es de
-              pasarla bien.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/953610.png" alt="preview img" />
-          <div class="card-body">
-            <h2 class="card-title">Comedor</h2>
-            <p class="card-text">
-              Te brindamos un menú variado y atractivo para los chicos, teniendo
-              en cuenta los requisitos nutricionales de los mismos.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="./assets/993891.png" alt="preview img" />
-          <div class="card-body">
-            <h2 class="card-title">Empresas</h2>
-            <p class="card-text">
-              Nos encargamos de ofrecerte distintas opciones, teniendo en cuenta
-              los requerimientos y/o preferencias de cada uno de los empleados
-              del establecimiento.
-            </p>
-          </div>
-        </div>
-      </div>
+    <section class="section-details">
+      <h3>Kanna Cocina, donde cada plato cuenta una historia</h3>
     </section>
     <!--  -->
     <!--  -->
@@ -184,8 +159,6 @@
         <p>Dirección <span class="d-block">Av Santa Fe 3500 CABA</span></p>
       </article>
     </footer>
-    <!--  -->
-    <!--  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
