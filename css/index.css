@@ -234,13 +234,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 3px;
   width: 272px;
   height: 350px;
   box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
   overflow: hidden;
-  border-color: #000000;
+  border-color: #000;
   transition: 0.8s;
 }
 .card img, .card-puntos img {
@@ -322,6 +322,30 @@
 }
 .card-puntos img {
   background-color: white;
+}
+
+.section-preguntas {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section-preguntas h2 {
+  font-size: 40px;
+}
+.section-preguntas div {
+  display: flex;
+  gap: 15px;
+  text-align: left;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.question-article {
+  padding: 10px;
+  border-bottom: 2px solid black;
+  width: 100%;
 }
 
 @media (max-width: 1500px) {
