@@ -246,24 +246,52 @@
   justify-content: space-around;
 }
 
+@mixin card-styles(
+  $display,
+  $flex-direction,
+  $align-items,
+  $br,
+  $width,
+  $height,
+  $box-shadow,
+  $text-align,
+  $overflow,
+  $border-color,
+  $transition
+) {
+  display: $display;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  border-radius: $br;
+  width: $width;
+  height: $height;
+  box-shadow: $box-shadow;
+  text-align: $text-align;
+  overflow: $overflow;
+  border-color: $border-color;
+  transition: $transition;
+}
+
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 3px 3px 3px 3px;
-  width: 272px;
-  height: 350px;
-  box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  overflow: hidden;
+  @include card-styles(
+    flex,
+    column,
+    center,
+    3px,
+    272px,
+    350px,
+    2px 7px 13px 0px rgba(0, 0, 0, 0.2),
+    center,
+    hidden,
+    #000,
+    0.8s
+  );
   img {
     padding: 5px;
     height: 80px;
     width: 80px;
     border-bottom: 2px solid black;
   }
-  border-color: #000000;
-  transition: 0.8s;
 }
 
 .card:hover {
@@ -297,6 +325,77 @@
   border-top: 2px solid black;
 }
 
+.section-eslogan {
+  text-align: center;
+  padding-top: 20px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  h3 {
+    color: rgb(19, 0, 128);
+  }
+}
+
+.section-puntos {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f5f2f2;
+  padding: 10px;
+}
+
+.img-div-puntos {
+  text-align: center;
+  img {
+    object-fit: contain;
+    height: 100%;
+  }
+}
+
+.card-div-puntos {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-puntos {
+  @extend .card;
+  height: 250px;
+  width: 400px;
+  img {
+    background-color: white;
+  }
+}
+
+.section-preguntas {
+  h2 {
+    font-size: 40px;
+  }
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  div {
+    display: flex;
+    gap: 15px;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.question-article {
+  padding: 10px;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+//////
+//////
+//////
+//////
 @media (max-width: 1500px) {
   .contenedor-options {
     display: grid;
@@ -508,5 +607,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .section-puntos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .card-div-puntos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-top: 20px;
+    gap: 10px;
   }
 }
